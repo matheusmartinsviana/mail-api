@@ -16,4 +16,8 @@ routes.post('/api/v1/send-email', async (req, res, next) => {
   }
 });
 
+routes.get('hello-world', (req, res) => {
+  res.status(200).json({ message: 'Hello World!' });
+});
+
 export default routes;
